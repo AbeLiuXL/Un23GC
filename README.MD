@@ -1,5 +1,4 @@
 # Un23GC
-
 ## Requirements
 * torch >= 1.0.1
 * torchvision
@@ -24,7 +23,6 @@
 ## Training
 > export OMP_NUM_THREADS=4
 > 
-> export CUDA_VISIBLE_DEVICES=0,1,2,3
 ### Flow Net
 >python train_pl_f.py --data_dir DATA_DIR  --save_name SAVE_NAME 
 ### Depth-Pose Net
