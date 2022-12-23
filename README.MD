@@ -1,4 +1,5 @@
-#Un23GC
+# Un23GC
+
 ## Requirements
 * torch >= 1.0.1
 * torchvision
@@ -25,11 +26,11 @@
 > 
 > export CUDA_VISIBLE_DEVICES=0,1,2,3
 ### Flow Net
->python train_pl_f.py --data_dir DATA_DIR --gpu_id 0,1,2,3  --save_name SAVE_NAME 
+>python train_pl_f.py --data_dir DATA_DIR  --save_name SAVE_NAME 
 ### Depth-Pose Net
->python train_pl_dp.py --data_dir DATA_DIR --gpu_id 0,1,2,3 --save_name SAVE_NAME 
+>python train_pl_dp.py --data_dir DATA_DIR --save_name SAVE_NAME 
 ### Depth-Pose-Flow Net
->python train_pl_dpf.py --data_dir DATA_DIR --gpu_id 0,1,2,3 --save_name SAVE_NAME --pre_dp checkpoints/... --pre_flow checkpoints/... 
+>python train_pl_dpf.py --data_dir DATA_DIR --save_name SAVE_NAME --pre_dp checkpoints/... --pre_flow checkpoints/... 
 
 ## Evaluation
 ### Flow
